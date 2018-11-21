@@ -152,7 +152,7 @@ def validate_image_detections(image_detections):
             if detection['right'] >= image['width'] or detection['bottom'] >= image['height']:
                 raise ValueError("Image %s has out of bounds bounding box %s" % (image, detection))
             if detection['right'] <= detection['left'] or detection['bottom'] <= detection['top']:
-                raise ValueError("Image %image has zero dimension bbox %s" % (image, detection))
+                raise ValueError("Image %s image has zero dimension bbox %s" % (image, detection))
 
 
 def convert_labels(image_detections, expected_labels,

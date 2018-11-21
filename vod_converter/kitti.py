@@ -140,8 +140,8 @@ class KITTIEgestor(Egestor):
             os.makedirs(images_dir)
 
         labels_dir = "%s/training/label_2" % (root)
-        if not os.path.exists(images_dir):
-            os.makedirs(images_dir)
+        if not os.path.exists(labels_dir):
+            os.makedirs(labels_dir)
 
         id_file = "%s/train.txt" % (root)
 
